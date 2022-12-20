@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Graph</title>
+    <link rel="shortcut icon" href="./images/ghost-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 👻 -->
+    <div class="container">
+    <div class="card">
+        <header class="card-header">
+            <div>
+                <h2>Ghosts</h2>
+                <h3>Sightings by year</h3>
+            </div>
+            <div>
+                <button
+                    type="button"
+                    onclick="selectYear(this, 2021)">
+                    2021
+                </button>
+                    <button
+                    class="active"
+                    type="button"
+                    onclick="selectYear(this, 2022)">
+                    2022
+                </button>
+            </div>
+        </header>
+        <canvas id="areaTableChart" width="800" height="440">        
+        </canvas>
+    </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js">
+    </script>
+    <script type="text/javascript" src="main.js">
+    </script>
+</body>
+</html>
